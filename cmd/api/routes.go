@@ -12,7 +12,7 @@ func (app *application) routes() http.Handler {
 
 	router.HandlerFunc(http.MethodGet, "/status", app.statusHandler)
 
-	router.HandlerFunc(http.MethodGet, "/v1/hero/:id", app.getOneMovie)
+	router.HandlerFunc(http.MethodGet, "/v1/hero/:id", app.getOneHero)
 	router.HandlerFunc(http.MethodGet, "/v1/heroes", app.getAllHeroes)
 	router.HandlerFunc(http.MethodGet, "/v1/heroes/:genre_id", app.getAllHeroesByGenre)
 
